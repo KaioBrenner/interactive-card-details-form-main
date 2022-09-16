@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>preventDefault example</title>
+
+
+</head>
+
+<body>
+
+    <form class="form"> 
+        <label for="name">Qual o seu nome?</label>
+        <input type="text" name="name" id="name" placeholder="Digite o seu nome">
+        <button class="btn">Enviar</button>
+      </form>
+
+
+
+      <script>
+        let form = document.querySelector(".form");
+        let btn = document.querySelector(".btn");
+        
+        btn.addEventListener("click", (event) => {
+          event.preventDefault();
+          checkName(form);
+        });
+        
+        function checkName(form) {
+          let name = form.name.value;
+        
+          let letters = /[aA-zZ]+/;
+        
+          if (name.match(letters)) {
+            console.log(name);
+          } else {
+            console.log("Digite um nome válido.");
+            }
+        }
+        </script>
+</body>
+</html>
