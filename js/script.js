@@ -11,14 +11,7 @@ function instaName() {
     cardName.innerHTML = "Jane Appleseed";
   }
 
-  /*const form = document.getElementById("form");
-  const submit = document.getElementById("submit");
-
-  submit.addEventListener("click", (event) => {
-    event.preventDefault();
-    checkName(form);
-  });
-  */
+  
 }
 /*Card number section */
 
@@ -222,39 +215,13 @@ function change() {
   }
 
 
-  /*form.style.display = "none"
-    completeState.style.display = "flex"*/
 }
 
 function goHome(){
-  const form = document.getElementById("form");
-  const completeState = document.getElementById("complete-state");
-
-  form.style.display = "flex";
-  completeState.style.display = "none";
+  window.location.reload()
 }
 
 
 
 
 
-
-/*const form = document.getElementById("form");
-const submit = document.getElementById("submit");
-
-submit.addEventListener("click", (event) => {
-    event.preventDefault();
-    checkName(form);
-});
-
-function checkName(form) {
-    let name = form.name.value;
-  
-    let letters = /[aA-zZ]+/;
-  
-    if (name.match(letters)) {
-      console.log(name);
-    } else {
-      console.log("Digite um nome válido.");
-      }
-  } */
